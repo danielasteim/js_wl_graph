@@ -1,0 +1,39 @@
+html {
+    background-color: black;
+
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.weight-form {
+    height: 15vh;
+    position: relative;
+    top: 10vh;
+}
+
+.whole-graph {
+    height: 70vh;
+    display: flex;
+}
+
+.graph {
+    height: 65vh;
+    width: 60vw;
+    background-color: white;
+    padding: 10px;
+}
+
+.blank {
+    width: 20vw;
+}
+.graph-info {
+    width: 20vw;
+}
+
+.backup {
+    height: 20vh;
+    margin-top: 40px;
+}
