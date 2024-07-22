@@ -1,9 +1,20 @@
-html {
-    background-color: black;
-
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
+    box-sizing: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
 }
 
-body {
+:root {
+    --color-one: pink;
+    --color-two: rgb(255, 246, 193);
+}
+
+.container {
+    background: linear-gradient(45deg, var(--color-two), var(--color-one));
     display: grid;
     place-items: center;
 }
@@ -11,19 +22,60 @@ body {
 .weight-form {
     height: 15vh;
     position: relative;
-    top: 10vh;
+    top: 5vh;
+    padding-left: 10px;
 }
 
+.weight-form form input {
+    width: 150px;
+    outline: 0;
+    border-radius: 10px;
+    height: 40px;
+    background: #333;
+    color: var(--color-two);
+    box-shadow: -2px -2px 5px 0px rgba(255, 255, 255, 0.5),
+                2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.weight-form form input::placeholder {
+    color: var(--color-two);
+    padding-left: 10px;
+}
+
+.weight-form form input:nth-child(2) {
+    width: 70px;
+}
+
+.weight-form form input:nth-child(2):hover {
+    background: var(--color-two);
+}
 .whole-graph {
     height: 70vh;
     display: flex;
+    justify-content: center;
+    align-items: self-start;
 }
 
 .graph {
     height: 65vh;
     width: 60vw;
-    background-color: white;
+    background: white;
     padding: 10px;
+    padding-bottom: 0px;
+}
+
+.data {
+    height: 65vh;
+    display: flex;
+    align-items:end;
+    justify-content:start;
+}
+
+.column {
+    background: var(--color-one);
+    height: 380px;
+    margin: 2px;
+    width: 5px;
 }
 
 .blank {
@@ -31,9 +83,25 @@ body {
 }
 .graph-info {
     width: 20vw;
+    padding-left: 20px;
+    font-weight: 400;
+    color: #333;
 }
 
+.graph-info div {
+    background: transparent;
+    width: 300px;
+}
 .backup {
     height: 20vh;
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+.backup button {
+    height: 40px;
+    width: 250px;
+    background: #333;
+    color: var(--color-two);
+    box-shadow: -2px -2px 5px 0px rgba(255, 255, 255, 0.5),
+                2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
